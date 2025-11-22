@@ -41,7 +41,13 @@
         th { background-color: var(--color-charcoal); color: white; border-bottom: 2px solid var(--color-gold); }
         tbody tr:hover { background-color: var(--color-cream); }
         pre { background: var(--color-charcoal); color: white; padding: 1.5rem; border-radius: 4px; overflow-x: auto; margin: 1.5rem 0; font-family: 'Courier New', monospace; }
-        code { background: var(--color-cream); padding: 0.2em 0.4em; border-radius: 3px; font-family: 'Courier New', monospace; }
+        code { background: var(--color-cream); padding: 0.2em 0.4em; border-radius: 3px; font-family: 'Courier New', monospace; color: var(--color-charcoal); }
+        pre code { background: transparent; color: inherit; padding: 0; }
+        .visual-box { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 2rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--color-gold); }
+        .chart-container { background: white; padding: 1.5rem; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 1.5rem 0; }
+        .info-box { background: #e8f4f8; border-left: 4px solid #2196F3; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+        .warning-box { background: #fff3cd; border-left: 4px solid #ff9800; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+        .success-box { background: #d4edda; border-left: 4px solid #28a745; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
         ul, ol { margin-left: 2rem; margin-bottom: 1.5rem; }
         li { margin-bottom: 0.5rem; line-height: 1.6; }
         strong { color: var(--color-black); font-weight: 600; }
@@ -643,6 +649,47 @@ $100K│                       ┌───┤   │   │   │
 </tr>
 </tbody></table>
 
+<div class="info-box">
+<p><strong>📊 COST BREAKDOWN VISUALIZATION - Standard $100 Sale:</strong></p>
+<pre><code>
+REVENUE: $100.00 (Standard tier pants)
+═══════════════════════════════════════════════════════════════
+
+COST OF GOODS (Total: $10.00)
+────────────────────────────────────────────────────────────
+Blank Pants     ████████ $3.00  (30% of COGS)  [$1.50-4 bulk]
+Paint           ████ $1.50      (15% of COGS)  [Coverage dependent]
+Fabric Medium   ██ $0.50        (5% of COGS)   [Proportional to paint]
+Packaging       ████ $3.50      (35% of COGS)  [Mailer+tissue+sticker+label]
+Shipping        ███ $1.50       (15% of COGS)  [Variable by destination]
+────────────────────────────────────────────────────────────
+TOTAL COGS:     $10.00 = 10% of revenue
+
+GROSS PROFIT:   $90.00 = 90% margin ★ Industry exceptional
+
+OPERATING EXPENSES (estimated monthly average per piece)
+────────────────────────────────────────────────────────────
+Heat press      ██ $0.50/piece  [Amortized over 2000 uses]
+Shopify fees    ████ $3.20      [2% transaction + $0.30 + platform]
+Marketing       ██ $1.50        [Facebook/Instagram ads, averaged]
+Misc supplies   █ $0.80         [Brushes, tools, cleaning]
+────────────────────────────────────────────────────────────
+TOTAL OPEX:     $6.00 per piece
+
+NET PROFIT:     $84.00 per piece = 84% net margin
+
+PROFIT DISTRIBUTION (Using 50/30/20 rule)
+═══════════════════════════════════════════════════════════
+████████████████████████ $42.00  (50%) → Reinvest in business
+██████████████ $25.20            (30%) → Owner distribution
+█████████ $16.80                 (20%) → Emergency reserve
+═══════════════════════════════════════════════════════════
+
+KEY INSIGHT: Even with conservative $100 pricing, you keep $84 per sale.
+At 100 pairs/month = $8,400 net profit. At 330 pairs/month = $27,720 net.
+</code></pre>
+</div>
+
 <h2>Tool Maintenance Schedule</h2>
 
 <table>
@@ -695,6 +742,65 @@ $100K│                       ┌───┤   │   │   │
 <td>15 min</td>
 </tr>
 </tbody></table>
+
+<div class="success-box">
+<p><strong>📅 TOOL MAINTENANCE CALENDAR - Visual Schedule:</strong></p>
+<pre><code>
+DAILY MAINTENANCE (5 minutes at end of each session)
+═══════════════════════════════════════════════════════════════
+☑ Rinse all brushes until water runs clear
+☑ Clear squeeze bottle nozzles with paperclip
+☑ Wipe down work surfaces
+☑ Cap all paint containers tightly
+
+WEEKLY MAINTENANCE (Every Monday, 15 minutes)
+═══════════════════════════════════════════════════════════════
+Week 1   Week 2   Week 3   Week 4   │ TASKS
+  ✓        ✓        ✓        ✓      │ Clean heat press platen
+  ✓        ✓        ✓        ✓      │ Condition brush bristles
+  ✓        ✓        ✓        ✓      │ Organize workspace
+                            ✓       │ Deep clean (90 min)
+
+MONTHLY DEEP CLEAN CHECKLIST (First Monday of month)
+═══════════════════════════════════════════════════════════════
+□ Scrub all work surfaces thoroughly
+□ Reorganize supply storage
+□ Inventory paint levels (reorder if < 25%)
+□ Check heat press temperature accuracy
+□ Clean photo backdrop area
+□ Inspect all tools for wear/damage
+□ Update equipment maintenance log
+
+QUARTERLY CALIBRATION (Every 3 months: Jan, Apr, Jul, Oct)
+═══════════════════════════════════════════════════════════════
+Q1 (Jan)  │ ☑ Heat press temp calibration
+          │ ☑ Replace worn brushes
+          │ ☑ Evaluate new supply sources
+          │
+Q2 (Apr)  │ ☐ Heat press temp calibration
+          │ ☐ Replace teflon sheets
+          │ ☐ Audit entire supply inventory
+          │
+Q3 (Jul)  │ ☐ Heat press temp calibration
+          │ ☐ Replace worn tools
+          │ ☐ Review and update processes
+          │
+Q4 (Oct)  │ ☐ Heat press temp calibration
+          │ ☐ End-of-year equipment assessment
+          │ ☐ Plan equipment upgrades for next year
+
+⚠ REPLACEMENT SIGNALS (Don't wait for complete failure!)
+═══════════════════════════════════════════════════════════════
+ Tool              │ Replace When...
+───────────────────┼──────────────────────────────────────────
+ Brushes           │ Bristles splay or shed (every 200-300 uses)
+ Teflon sheets     │ Brown stains appear (every 500-1000 uses)
+ Squeeze bottles   │ Tips crack or leak (every 6-12 months)
+ Heat press pad    │ Becomes compressed or uneven (yearly)
+ Backdrop paper    │ Stained beyond professional look (monthly)
+═══════════════════════════════════════════════════════════════
+</code></pre>
+</div>
 
 <h2>Wash Test Pass/Fail Criteria</h2>
 
@@ -2668,6 +2774,78 @@ IMPORTANT: Your pants will be unique. We follow your general guidance but exact 
 
 <h2>Section 2.6: Complete Fabric Sourcing Guide (From Zero to Scale)</h2>
 
+<div class="chart-container">
+<p><strong>🌳 FABRIC SOURCING DECISION TREE - Choose Your Path:</strong></p>
+<pre><code>
+                        START: Need pants for production
+                                    │
+                      ┌─────────────┴─────────────┐
+                      │                           │
+              Do you have $0-50?          Do you have $50+?
+                      │                           │
+                      ▼                           ▼
+            ┌─────────────────┐        ┌──────────────────┐
+            │  HOME INVENTORY  │        │  BULK SOURCING   │
+            │   (Week 1-2)     │        │   (Week 3+)      │
+            └─────────┬───────┘        └────────┬─────────┘
+                      │                          │
+         ┌────────────┴────────────┐            │
+         │                         │            │
+         ▼                         ▼            ▼
+    Your closet              Friend/family   Thrift bulk outlet
+    (3-5 pairs)              donations       ($1.50-$4/pair)
+         │                   (5-10 pairs)           │
+         └─────────┬─────────────┘                 │
+                   ▼                                 ▼
+              WASH & PREP                    QUALITY GRADING
+                   │                                 │
+                   │                    ┌────────────┼────────────┐
+                   │                    │            │            │
+                   │                    ▼            ▼            ▼
+                   │              Grade A      Grade B      Grade C
+                   │              Premium      Standard     Practice
+                   │              (40%)        (40%)        (15%)
+                   │                    │            │            │
+                   │                    └────────────┴────────────┘
+                   │                                 │
+                   └─────────────┬───────────────────┘
+                                 ▼
+                         TEST FIRST PAIR
+                                 │
+                   ┌─────────────┴─────────────┐
+                   │                           │
+            Adhesion good?                Adhesion bad?
+                   │                           │
+                   ▼                           ▼
+          START PRODUCTION              TROUBLESHOOT
+           (Main workflow)              (See Section 1.1)
+                   │                           │
+                   │                   ┌───────┴────────┐
+                   │                   │                │
+                   │              Fabric prep     Heat settings
+                   │              issue?          issue?
+                   │                   │                │
+                   │                   └────────┬───────┘
+                   │                            │
+                   └────────────────────────────┘
+                                 │
+                                 ▼
+                    SCALE UP TO TARGET CAPACITY
+                         (See Section 2.1)
+
+SOURCING COST COMPARISON:
+═══════════════════════════════════════════════════════════════
+ Source Type        │ Cost/Pair  │ Time   │ Quality  │ Best For
+────────────────────┼────────────┼────────┼──────────┼──────────
+ Home inventory     │ $0         │ 0 hrs  │ Variable │ Week 1-2
+ Donations          │ $0         │ 2 hrs  │ Variable │ Week 1-3
+ Regular thrift     │ $8-$15     │ 3 hrs  │ Good     │ Backup
+ Bulk by pound      │ $1.50-$4   │ 1 hr   │ Variable │ PRIMARY ★
+ Wholesale (50+)    │ $4-$8      │ 0 hrs  │ Consistent│ Month 6+
+═══════════════════════════════════════════════════════════════
+</code></pre>
+</div>
+
 <h3>Thrift Bulk by Pound (Primary Strategy for Maximum Margin)</h3>
 
 <p><strong>How the System Works:</strong></p>
@@ -3102,6 +3280,80 @@ Fit: [loose, perfect, snug]
 
 <h2>Section 3.2: Your Actual Target Markets</h2>
 
+<div class="chart-container">
+<p><strong>🎯 TARGET MARKET COMPARISON MATRIX:</strong></p>
+<pre><code>
+═══════════════════════════════════════════════════════════════════════════════
+MARKET         │ SIZE    │ INCOME  │ DEMAND │ ACCESS  │ PRIORITY │ REVENUE %
+               │         │ LEVEL   │ FOR    │ EASE    │          │ (Year 1)
+               │         │         │ UNIQUE │         │          │
+═══════════════════════════════════════════════════════════════════════════════
+NYC METRO      │ ████████│ $$$$$   │ ★★★★★  │ Medium  │ ⚡ HIGH  │ 35-45%
+(5M people)    │ MASSIVE │ 80-150K │ VERY   │ 2hr     │          │
+               │         │ HH      │ HIGH   │ drive   │ PRIMARY  │
+───────────────┼─────────┼─────────┼────────┼─────────┼──────────┼───────────
+HUDSON VALLEY  │ ██████  │ $$$$    │ ★★★★★  │ High    │ ⚡ HIGH  │ 25-35%
+(500K)         │ LARGE   │ 60-120K │ VERY   │ Local   │          │
+Hudson/Beacon/ │         │ HH      │ HIGH   │ 30-60   │ PRIMARY  │
+Cold Spring    │         │         │        │ min     │          │
+───────────────┼─────────┼─────────┼────────┼─────────┼──────────┼───────────
+ONLINE DIRECT  │ ████████│ $$$$    │ ★★★★   │ Very    │ ⚡ HIGH  │ 25-30%
+(Instagram/    │ GLOBAL  │ 50-100K │ HIGH   │ High    │          │
+Shopify)       │         │         │        │ Website │ PRIMARY  │
+───────────────┼─────────┼─────────┼────────┼─────────┼──────────┼───────────
+ALBANY/        │ ████    │ $$$     │ ★★     │ Medium  │ MEDIUM   │ 3-8%
+SARATOGA       │ MEDIUM  │ 50-80K  │ LOW-   │ 30-45   │          │
+               │         │         │ MEDIUM │ min     │ SECONDARY│
+───────────────┼─────────┼─────────┼────────┼─────────┼──────────┼───────────
+HUDSON FALLS   │ █       │ $$      │ ★      │ Very    │ ⚠ LOW    │ 2-3%
+(Local town)   │ TINY    │ 35-55K  │ VERY   │ High    │          │
+6,900 people   │ 6.9K    │ HH      │ LOW    │ Local   │ AVOID    │
+───────────────┼─────────┼─────────┼────────┼─────────┼──────────┼───────────
+ETSY           │ ████████│ $$-$$$  │ ★★★    │ High    │ LOW      │ 0-5%
+MARKETPLACE    │ GLOBAL  │ 40-70K  │ MEDIUM │ Website │          │
+               │         │         │ Price  │         │ TERTIARY │
+               │         │         │ War    │         │          │
+═══════════════════════════════════════════════════════════════════════════════
+
+CUSTOMER PSYCHOGRAPHIC PROFILES (Who actually buys):
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFILE A: NYC CREATIVE PROFESSIONAL (★ BEST CUSTOMER - 40% of sales)
+┌────────────────────────────────────────────────────────────────┐
+│ Age: 25-35                Income: $75-125K/yr                   │
+│ Job: Designer, marketing, media, tech                           │
+│ Values: Uniqueness, sustainability, supporting artists          │
+│ Pain Point: "Everything at Zara looks the same"                 │
+│ Buys: Premium tier ($175-225), 2-3 pieces per year             │
+│ Discovery: Instagram, word of mouth, Brooklyn pop-ups           │
+└────────────────────────────────────────────────────────────────┘
+
+PROFILE B: HUDSON VALLEY ARTIST (★ LOYAL CUSTOMER - 30% of sales)
+┌────────────────────────────────────────────────────────────────┐
+│ Age: 30-50                Income: $60-100K/yr                   │
+│ Job: Artist, gallery owner, creative entrepreneur               │
+│ Values: Local, handmade, artistic expression                    │
+│ Pain Point: "Need wearable art that reflects my aesthetic"      │
+│ Buys: Statement tier ($225-275), 1-2 pieces per year           │
+│ Discovery: Local galleries, Instagram, artist community         │
+└────────────────────────────────────────────────────────────────┘
+
+PROFILE C: ONLINE FASHION ENTHUSIAST (VOLUME CUSTOMER - 25% of sales)
+┌────────────────────────────────────────────────────────────────┐
+│ Age: 22-35                Income: $50-90K/yr                    │
+│ Job: Various professional roles                                 │
+│ Values: Unique style, Instagram-worthy, investment pieces       │
+│ Pain Point: "Want to stand out, not blend in"                   │
+│ Buys: Standard-Premium tier ($100-175), 1-2 pieces per year    │
+│ Discovery: Instagram Reels, TikTok, Pinterest                   │
+└────────────────────────────────────────────────────────────────┘
+
+⚠ AVOID: Price-sensitive local market expecting "friend prices"
+⚠ AVOID: Etsy race-to-bottom pricing expectations
+✓ FOCUS: Urban creative class willing to pay for unique, handmade pieces
+</code></pre>
+</div>
+
 <p><strong>Primary Market: NYC + Hudson Valley Corridor</strong></p>
 
 <p><strong>The Geographic Advantage:</strong></p>
@@ -3431,6 +3683,132 @@ Fit: [loose, perfect, snug]
 
 <h2>Section 3.4: 2025 Scaling Levers: Digital Twin and Hybrid Production</h2>
 
+<div class="chart-container">
+<p><strong>📈 BUSINESS GROWTH SCALING ROADMAP - Month-by-Month:</strong></p>
+<pre><code>
+REVENUE TRAJECTORY (Conservative → Realistic → Aggressive)
+═══════════════════════════════════════════════════════════════════════
+
+$30K ┤                                                    ⚡ AGGRESSIVE
+     │                                              ╱────
+$25K ┤                                         ╱────     Scale
+     │                                    ╱────          Team+Auto
+$20K ┤                              ╱────
+     │                         ╱────     ★ REALISTIC
+$15K ┤                    ╱────          Optimize
+     │               ╱────               Systems
+$10K ┤          ╱────
+     │     ╱────
+ $5K ┤╱────        ● CONSERVATIVE
+     │         Prove
+ $0  ┼─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────
+     M1   M2   M3   M4   M5   M6   M7   M8   M9  M10  M11  M12
+
+KEY SCALING MILESTONES:
+═══════════════════════════════════════════════════════════════════════
+
+MONTH 1-2: FOUNDATION (Prove the Concept)
+┌────────────────────────────────────────────────────────────────────┐
+│ Capacity: 5-10 pairs/month │ Revenue: $500-$1,500                  │
+│ Focus: Product-market fit, wash testing, initial sales             │
+│ Team: Solo or 1 family member                                      │
+│ Tools: Basic (iron, thrifted materials)                            │
+│ Marketing: Friends/family, initial Instagram                       │
+│ KEY UNLOCK: First paying customer validates concept ✓             │
+└────────────────────────────────────────────────────────────────────┘
+
+MONTH 3-4: SYSTEMS (Build Repeatable Processes)
+┌────────────────────────────────────────────────────────────────────┐
+│ Capacity: 20-40 pairs/month │ Revenue: $3,000-$6,000               │
+│ Focus: Heat press acquisition, documentation, batch production     │
+│ Team: 1-2 people, defined roles                                    │
+│ Tools: Heat press ($300), bulk materials                           │
+│ Marketing: Instagram Reels 2x/week, email list starts             │
+│ KEY UNLOCK: Heat press = 3× speed improvement ⚡                   │
+└────────────────────────────────────────────────────────────────────┘
+
+MONTH 5-7: OPTIMIZATION (Maximize Efficiency)
+┌────────────────────────────────────────────────────────────────────┐
+│ Capacity: 60-100 pairs/month │ Revenue: $10,000-$17,000            │
+│ Focus: Time-motion refinement, multi-channel marketing             │
+│ Team: 2-3 people, specialized by skill                             │
+│ Tools: Photography setup, bulk inventory (100+ blanks)             │
+│ Marketing: Pop-ups start, email automation, content calendar       │
+│ KEY UNLOCK: $10K month = Sustainable income achieved ★            │
+└────────────────────────────────────────────────────────────────────┘
+
+MONTH 8-12: SCALE (Multiply Without Breaking)
+┌────────────────────────────────────────────────────────────────────┐
+│ Capacity: 150-330 pairs/month │ Revenue: $20,000-$30,000+          │
+│ Focus: Team expansion, automation, wholesale partnerships          │
+│ Team: 3-5 people, defined production line                          │
+│ Tools: Multiple heat presses, dedicated workspace                  │
+│ Marketing: Multi-platform, influencer collabs, wholesale           │
+│ KEY UNLOCK: $25K/month = Business replaces day job ⚡⚡           │
+└────────────────────────────────────────────────────────────────────┘
+
+CRITICAL SCALING LEVERS (Pull in sequence):
+═══════════════════════════════════════════════════════════════════════
+
+LEVER 1: Equipment Upgrade (Month 3) → +200% speed
+─────────────────────────────────────────────────────────────────────
+   Before: Household iron = 90 min/pair
+   After:  Heat press = 30-45 min/pair
+   Impact: Can produce 3× volume in same time
+   Cost:   $250-$400 one-time
+
+LEVER 2: Bulk Material Sourcing (Month 4) → +40% margin
+─────────────────────────────────────────────────────────────────────
+   Before: Regular thrift ($8-15/pair)
+   After:  Bulk by pound ($1.50-4/pair)
+   Impact: Save $5-12/pair = $1,650-$3,960/month at 330 pairs
+   Cost:   Time (weekly bulk trips)
+
+LEVER 3: Team Specialization (Month 6) → +150% output
+─────────────────────────────────────────────────────────────────────
+   Before: One person does everything (bottleneck)
+   After:  Person A paints, Person B heat sets + photos, Person C ships
+   Impact: Pipeline flows continuously, no waiting
+   Cost:   Profit sharing (but total profit grows faster)
+
+LEVER 4: Marketing Automation (Month 7) → +300% reach
+─────────────────────────────────────────────────────────────────────
+   Before: Manual posts, inconsistent presence
+   After:  Scheduled content, email sequences, retargeting ads
+   Impact: Consistent visibility = predictable sales
+   Cost:   $50-150/month tools + 5 hrs/week setup
+
+LEVER 5: Hybrid Production Model (Month 9+) → Unlimited scale
+─────────────────────────────────────────────────────────────────────
+   Before: You paint every piece (time = capacity ceiling)
+   After:  Digital twin + print-on-demand for basics, hand-paint premiums
+   Impact: Can serve 10× customers with same team size
+   Cost:   Partner research, some margin reduction on basics
+
+BOTTLENECK IDENTIFICATION:
+═══════════════════════════════════════════════════════════════════════
+At each revenue level, identify what's constraining growth:
+
+$0-$3K/mo:    CONSTRAINT = Product quality & basic systems
+              FIX = Wash testing, documentation, heat press
+
+$3K-$10K/mo:  CONSTRAINT = Production capacity
+              FIX = Team member, batch production, bulk materials
+
+$10K-$20K/mo: CONSTRAINT = Marketing reach
+              FIX = Content calendar, email list, pop-ups
+
+$20K+/mo:     CONSTRAINT = Your available time
+              FIX = Team expansion, automation, delegation
+
+⚠ WARNING: Don't skip levels! Each phase builds foundations for next.
+Jumping from Month 2 to Month 8 tactics = systems collapse.
+
+✓ SUCCESS PATTERN: Master current level → Add one new lever → Stabilize
+   → Master new level → Add next lever. Slow is smooth, smooth is fast.
+</code></pre>
+</div>
+
 <p><strong>The Digital Twin Protocol</strong></p>
 <p>Traditional sampling wastes paint and fabric. The 2025 standard is virtual validation before physical action.</p>
 
@@ -3732,6 +4110,47 @@ SPL-YYMMDD-###
 <p>Commingling business and personal funds is the #1 cause of LLC liability piercing (court ignores your legal protection), tax audit triggers, and partnership disputes. Financial separation isn't bureaucratic overhead—it's the foundation of sustainable operations.</p>
 
 <h3>Banking Structure (The Three-Account System)</h3>
+
+<div class="visual-box">
+<p><strong>💰 MONEY FLOW DIAGRAM - The Three-Account System:</strong></p>
+<pre><code>
+┌─────────────────────────────────────────────────────────────────────┐
+│                    REVENUE SOURCES (All channels)                   │
+│   Shopify • Instagram • Pop-ups • Wholesale • Custom Orders         │
+└────────┬────────────────────────────────────────────────┬───────────┘
+         │                                                 │
+         ▼                                                 ▼
+┌────────────────────────────────────┐        ┌──────────────────────┐
+│    💵 ACCOUNT 1: OPERATING         │◀──────▶│  💰 ACCOUNT 2: TAX   │
+│    (Primary Business Account)      │  30%   │  (Tax Reserve)       │
+│                                     │Transfer│                      │
+│  INFLOWS:                          │        │  INFLOWS:            │
+│  • All sales revenue              │        │  • 30% of revenue    │
+│  • Refunds from suppliers          │        │                      │
+│                                     │        │  OUTFLOWS:           │
+│  OUTFLOWS:                         │        │  • Quarterly taxes   │
+│  • Materials & supplies            │        │  • Annual tax return │
+│  • Shipping & packaging            │        └──────────────────────┘
+│  • Software subscriptions          │                 │
+│  • Marketing & ads                 │                 │ Year-end
+│  • Equipment purchases             │                 │ excess
+│  • 30% transfer to tax account     │                 ▼
+│  • Owner distributions             │        ┌──────────────────────┐
+│                                     │───────▶│ 💳 ACCOUNT 3: OWNER  │
+│  MINIMUM BALANCE: $3,000           │ Draw   │ (Personal Income)    │
+└────────────────────────────────────┘ Amount │                      │
+                                               │  • Your salary       │
+         RECONCILIATION CHECKPOINT:            │  • Personal expenses │
+         Monthly: Sales Platform = Deposits    │  • Living costs      │
+         Never mix personal expenses here!     └──────────────────────┘
+
+AUTOMATION RULES (Set up in your banking app):
+═══════════════════════════════════════════════════════════════════════
+ 1. When Shopify payout hits → Auto-transfer 30% to Tax Account
+ 2. 1st of each month → Transfer fixed draw to Owner Account (if balance > $3K)
+ 3. Alert if Operating Account < $2,500 (red flag, reduce draws)
+</code></pre>
+</div>
 
 <p><strong>Account 1: Business Operating Account (Primary Revenue & Expenses)</strong></p>
 
@@ -5206,6 +5625,83 @@ Threatening/aggressive customer
 
 <h2>Section 5.1: Primary Risk Catalog</h2>
 
+<div class="warning-box">
+<p><strong>⚠️ BUSINESS RISK ASSESSMENT MATRIX:</strong></p>
+<pre><code>
+IMPACT vs PROBABILITY MATRIX (Position each risk in the grid)
+═══════════════════════════════════════════════════════════════════════
+
+                    PROBABILITY →
+           │   LOW (0-30%)  │  MEDIUM (30-60%) │  HIGH (60-100%)
+           ├────────────────┼──────────────────┼──────────────────
+CATASTROPHIC│                │                  │ ⚡ PRIORITY 1
+(Business  │                │   [Risk 1]       │ Product Quality
+ending)    │                │   Product        │ Failure
+           │                │   Quality        │ ★ MITIGATE NOW
+           ├────────────────┼──────────────────┼──────────────────
+HIGH       │                │   [Risk 4]       │ ⚡ PRIORITY 2
+(Severe    │                │   Family Team    │ [Risk 3]
+impact)    │                │   Dysfunction    │ Platform
+           │                │                  │ Dependency
+           ├────────────────┼──────────────────┼──────────────────
+MEDIUM     │   [Risk 7]     │   [Risk 2]       │ MONITOR
+(Recoverable)│ Health/Burnout│ Copycat          │ [Risk 5]
+           │                │   Competition    │ Supply Chain
+           │                │                  │ Disruption
+           ├────────────────┼──────────────────┼──────────────────
+LOW        │   [Risk 9]     │   [Risk 6]       │ ACCEPT
+(Minor     │   Equipment    │   Shipping       │ [Risk 8]
+nuisance)  │   Failure      │   Delays         │ Return Rate
+           ├────────────────┼──────────────────┼──────────────────
+
+RISK RESPONSE STRATEGY BY QUADRANT:
+═══════════════════════════════════════════════════════════════════════
+┌─ RED ZONE (High Impact, Medium-High Probability) ────────────────┐
+│ ⚡ MITIGATE IMMEDIATELY - Build systems to prevent these risks    │
+│ ★ Invest time and money upfront to reduce probability            │
+│ ★ Create detailed response plans                                  │
+│ Examples: Quality control, team agreements, email list building   │
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ YELLOW ZONE (Medium Impact, Medium Probability) ────────────────┐
+│ ⚠ MONITOR & PREPARE - Watch for early warning signs              │
+│ • Build contingency plans but don't over-invest                   │
+│ • Quarterly risk review                                           │
+│ Examples: Competition monitoring, burnout prevention              │
+└───────────────────────────────────────────────────────────────────┘
+
+┌─ GREEN ZONE (Low Impact, Low-Medium Probability) ────────────────┐
+│ ✓ ACCEPT & RESPOND - Don't waste time preventing these           │
+│ • Handle if they occur, but don't build systems around them       │
+│ • Cost of prevention > cost of occasional occurrence              │
+│ Examples: One-off shipping delays, minor equipment issues         │
+└───────────────────────────────────────────────────────────────────┘
+
+RISK SUMMARY TABLE:
+═══════════════════════════════════════════════════════════════════════
+RISK               │IMPACT│PROB│ MITIGATION COST │ FAILURE COST
+───────────────────┼──────┼────┼─────────────────┼──────────────────
+1. Quality Failure │ ████ │ ██ │ 3 hrs/month     │ $5,000+ reputation
+2. Copycats        │ ██   │ ███│ 5 hrs/week      │ 20-40% margin loss
+3. Platform Risk   │ ███  │ ███│ $50/mo + time   │ 70% traffic loss
+4. Team Conflict   │ ███  │ ██ │ 2 hrs/month     │ Business collapse
+5. Supply Chain    │ ██   │ ███│ 3 backup sources│ 2-week delay
+6. Shipping Issues │ █    │ ██ │ Insurance       │ $100-200/incident
+7. Burnout         │ ██   │ █  │ Rest days       │ 3-6 month recovery
+8. Returns         │ █    │ ███│ Good photos     │ $10-30/return
+9. Equipment Break │ █    │ █  │ Backup tools    │ $50-300 + downtime
+═══════════════════════════════════════════════════════════════════════
+
+⚡ ACTION PRIORITY (Work on these in order):
+═══════════════════════════════════════════════════════════════════════
+  1. Quality control system (Week 1) → Prevents catastrophic failures
+  2. Email list building (Week 2) → Reduces platform dependency
+  3. Team operating agreement (Week 3) → Prevents partnership issues
+  4. Three-source supply chain (Month 2) → Prevents material shortages
+  5. Burnout prevention routine (Month 2) → Sustains long-term operations
+</code></pre>
+</div>
+
 <h3>Risk 1: Product Quality Failure</h3>
 
 <p><strong>Manifestation:</strong></p>
@@ -5818,6 +6314,131 @@ Evening (7-8 PM):    Check metrics, adjust next day's posting time
 <p>---</p>
 
 <h2>Section 6.3: Email Marketing Sequence (Owning Your Audience)</h2>
+
+<div class="visual-box">
+<p><strong>🗺️ CUSTOMER JOURNEY MAP - From Discovery to Repeat Purchase:</strong></p>
+<pre><code>
+STAGE 1: AWARENESS (First Touch)
+┌─────────────────────────────────────────────────────────────────────┐
+│ CUSTOMER ACTION: Discovers brand on Instagram/TikTok/Pinterest      │
+│ EMOTION: Curious, intrigued by unique aesthetic                     │
+│ TOUCHPOINT: Social media post or Reel                               │
+│ YOUR ACTION: Engaging content showing product + process             │
+│ GOAL: Get them to visit profile/website                             │
+│                                                                       │
+│ Content examples: Time-lapse of painting, before/after, styled shot │
+└──────────────────────┬───────────────────────────────────────────────┘
+                       │ Click bio link / visit website
+                       ▼
+STAGE 2: CONSIDERATION (Exploring & Evaluating)
+┌─────────────────────────────────────────────────────────────────────┐
+│ CUSTOMER ACTION: Browsing available pants, checking prices          │
+│ EMOTION: Interested but hesitant (price, quality questions)         │
+│ TOUCHPOINT: Website, product photos, descriptions                   │
+│ YOUR ACTION: High-quality photos, detailed descriptions, FAQ        │
+│ GOAL: Build trust, answer objections                                │
+│                                                                       │
+│ Critical content: Multiple angles, measurements, care instructions  │
+└──────────────────────┬───────────────────────────────────────────────┘
+                       │ Subscribe OR Add to cart OR Leave
+                       ▼
+       ┌───────────────┴───────────────┐
+       │                               │
+       ▼ Subscribe                     ▼ Add to cart but don't buy
+STAGE 3A: NURTURE                 STAGE 3B: CART ABANDONMENT
+┌─────────────────────┐          ┌───────────────────────────┐
+│ EMAIL SEQUENCE:      │          │ EMAIL SEQUENCE:           │
+│ Day 0: Welcome      │          │ +1 hour: Reminder         │
+│ Day 3: Process story│          │ +24 hrs: Limited stock    │
+│ Day 7: Urgency      │          │ +48 hrs: Social proof     │
+│                      │          │                           │
+│ GOAL: Convert to    │          │ GOAL: Recover sale        │
+│ first purchase      │          │                           │
+└──────────┬──────────┘          └──────────┬────────────────┘
+           │                                │
+           └───────────┬────────────────────┘
+                       ▼
+STAGE 4: PURCHASE (Transaction)
+┌─────────────────────────────────────────────────────────────────────┐
+│ CUSTOMER ACTION: Completes checkout                                 │
+│ EMOTION: Excited, slight anxiety about fit/quality                  │
+│ TOUCHPOINT: Checkout page, order confirmation email                │
+│ YOUR ACTION: Smooth checkout, immediate confirmation               │
+│ GOAL: Reduce buyer's remorse, build anticipation                   │
+│                                                                       │
+│ Email: "Order confirmed! Here's what happens next..."               │
+└──────────────────────┬───────────────────────────────────────────────┘
+                       ▼ 3-7 days shipping
+STAGE 5: DELIVERY & FIRST EXPERIENCE
+┌─────────────────────────────────────────────────────────────────────┐
+│ CUSTOMER ACTION: Receives package, tries on pants                   │
+│ EMOTION: Delight (if packaging & product exceed expectations)       │
+│ TOUCHPOINT: Package, product, thank you note, care card            │
+│ YOUR ACTION: Beautiful packaging, care instructions, QR to VIP list│
+│ GOAL: Create "unboxing" moment worth sharing                       │
+│                                                                       │
+│ Include: Thank you card, care instructions, request for review      │
+└──────────────────────┬───────────────────────────────────────────────┘
+                       ▼
+       ┌───────────────┴───────────────┐
+       │                               │
+       ▼ Love it!                      ▼ Issue/Return
+STAGE 6A: ADVOCACY              STAGE 6B: SERVICE RECOVERY
+┌─────────────────────┐          ┌───────────────────────────┐
+│ ACTION: Share on IG │          │ IMMEDIATE: Full refund    │
+│ Tag you in post     │          │ OFFER: Replacement free   │
+│                      │          │                           │
+│ YOUR ACTION:        │          │ GOAL: Turn complaint to   │
+│ - Repost & thank    │          │ story of great service    │
+│ - Offer referral $$ │          │                           │
+│                      │          │ Follow up in 1 week       │
+└──────────┬──────────┘          └──────────┬────────────────┘
+           │                                │
+           └───────────┬────────────────────┘
+                       ▼
+STAGE 7: RETENTION & REPEAT PURCHASE (The Gold Mine)
+┌─────────────────────────────────────────────────────────────────────┐
+│ CUSTOMER ACTION: Considering second purchase                        │
+│ EMOTION: Loyal fan, wants to support you again                      │
+│ TOUCHPOINT: Email list (new drops), Instagram (new work)           │
+│ YOUR ACTION: Weekly/biweekly emails, early access for VIPs         │
+│ GOAL: 30% of customers buy 2+ times                                │
+│                                                                       │
+│ Strategies: VIP early access, referral rewards, custom requests     │
+└──────────────────────┬───────────────────────────────────────────────┘
+                       ▼
+                 BRAND EVANGELIST
+      (Shares with friends, creates UGC content)
+
+═══════════════════════════════════════════════════════════════════════
+KEY METRICS TO TRACK AT EACH STAGE:
+═══════════════════════════════════════════════════════════════════════
+Awareness → Consideration: Website click-through rate (Goal: 8-15%)
+Consideration → Subscribe: Email capture rate (Goal: 15-25%)
+Subscribe → Purchase: Email conversion rate (Goal: 10-20%)
+Cart Abandon → Purchase: Recovery rate (Goal: 20-35%)
+Purchase → Advocacy: Review/share rate (Goal: 30-40%)
+Purchase → Repeat: Repeat customer rate (Goal: 25-35% in Year 1)
+
+AVERAGE JOURNEY TIMELINE (Based on similar handmade fashion brands):
+═══════════════════════════════════════════════════════════════════════
+Fast buyer:  Same day discovery → purchase (15% of customers)
+Average:     1-7 days discovery → purchase (60% of customers)
+Slow burn:   2-8 weeks discovery → purchase (25% of customers)
+
+LIFETIME VALUE OPTIMIZATION:
+═══════════════════════════════════════════════════════════════════════
+First purchase:    $150 average (after discounts)
+Second purchase:   $200 average (no discount needed)
+Third+ purchase:   $225 average (buying premium tier)
+
+1-time buyer value:     $150
+2-time buyer value:     $350
+3+ buyer value:         $575+
+
+★ A customer who buys 3 times is worth 3.8× more than a one-time buyer!
+</code></pre>
+</div>
 
 <p>Social media platforms can ban you, change algorithms, or disappear. Your email list is yours forever. Email marketing has 4× higher ROI than social media for small brands.</p>
 
